@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap');
+
+
+*{
+  margin:0;
+  padding:0;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +16,81 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+/* SIDEBAR */
+.menu{
+  font-family: kanit;
+  color:rgba(16, 16, 16, 0.596);
+}
+.menu:hover{
+  background-color: rgba(184, 184, 184, 0.347);
+  color: rgb(52, 52, 191) !important;
+  border-right: 10px rgb(231, 14, 181) !important;
+  transition: 0.3s;
+}
+.active{
+  background-color: rgba(184, 184, 184, 0.347);
+  color: rgb(52, 52, 191) !important;
+}
+
+/* Navbar */
+.input-field{
+  display: flex;
+  width: 400px! important;
+  border-radius: 20px;
+  border: 2px solid rgba(40, 40, 40, 0.85);
+  padding-left: 1rem;
+  background:rgba(245, 244, 244, 0.692);
+}
+.input-field input{
+  background: transparent;
+  flex:1;
+  border: none;
+  outline: none;
+  padding: 0.25rem 1rem;
+}
+
+.wrap-element{
+  white-space: nowrap;
+}
+
+.username{
+  width: 6rem ! important;
+}
+
+/* Dashboard */
+.d-card-icon{
+  font-size: 5rem;
+}
+
+.d-card-content{
+  align-items: center !important;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .input-field{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  div.top-carousel{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  span.username{
+    display: none;
+  }
+  
+}
+
