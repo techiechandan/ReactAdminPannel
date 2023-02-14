@@ -8,7 +8,9 @@ export const Page4 = () => {
         <Sidebar />
         <div className="container-fluid">
           <Navbar name="Menu4" />
-          <h4 className="text-center mt-5">This is Page4!</h4>
+          <div className="first-row">
+            <h4 className="text-center mt-5">This is Page4!</h4>
+          </div>
         </div>
       </div>
     </>

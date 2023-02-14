@@ -132,19 +132,18 @@ export const Dashboard = () => {
 
   return (
     <>
-      <div className="container-fluid d-flex p-0">
+      <div className="container-fluid d-flex main-container p-0">
         <Sidebar />
-        <div className="container-fluid">
+        <div className="container-fluid p-0" >
           <Navbar name="Dashboard" />
 
-
-          <div className="row  mt-5">
+          <div className="row justify-content-around px-2 first-row" >
             <div className="col-md-6 col-12">
-              <div className="row gy-4">
+              <div className="row justify-md-content-around justify-content-end gy-4">
                 {
                   cardItem.map((item) => (
-                    <div className="col-md-6 col-12">
-                      <div className="card shadow px-5 py-4 align-middle">
+                    <div className="col-md-6 col-9">
+                      <div className="card shadow px-md-5 px-2 py-4 align-middle">
                         <div className="d-flex">
                           <span >
                             {item.icon}
@@ -161,23 +160,27 @@ export const Dashboard = () => {
               </div>
             </div>
             <div className="col-md-6 col-12 text-center mt-md-0 mt-4">
-              <div className="card shadow py-3 px-5 ">
-                <h4>Chart Title</h4>
-                <span>Some text will be placed here</span>
-                <Chart
-                  options={state.options}
-                  series={state.series}
-                  type="line"
-                  height="100%"
-                />
+              <div className="row jutify-md-content-around justify-content-end gy-4">
+                <div className="col-md-12 col-9">
+                  <div className="card shadow py-3 ">
+                    <h4>Chart Title</h4>
+                    <span>Some text will be placed here</span>
+                    <Chart
+                      options={state.options}
+                      series={state.series}
+                      type="line"
+                      height="100%"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="row my-4">
+          <div className="row my-4  px-2 ">
             <div className="col-md-9 col-12">
-              <div className="row mb-sm-4">
-                <div className="col-md-12 col-12">
+              <div className="row mb-sm-4 justify-md-content-around justify-content-end">
+                <div className="col-md-12 col-9">
                   <div className="card shadow border-0">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                       <div className="carousel-inner  top-carousel">
@@ -187,7 +190,7 @@ export const Dashboard = () => {
                               <div className="row justify-content-center ">
                                 {
                                   cardList.map((card) => (
-                                    <div className="col-3  my-4 ">
+                                    <div className="col-4  my-4 ">
                                       <div className="card shadow border-0">
                                         <img src={Profile} className="card-img rounded-circle px-4 py-4" alt="..." />
                                         <div className="card-body text-center text-secondary">
@@ -258,9 +261,9 @@ export const Dashboard = () => {
                   </div>
                 </div>
               </div>
-              <div className="row my-2">
-                <div className="col-md-12 col-12">
-                  <div className="card shadow p-5">
+              <div className="row justify-md-content-around justify-content-end my-2">
+                <div className="col-md-12 col-9">
+                  <div className="card shadow p-md-5 py-5 px-2">
                     <Chart
                       options={state.options}
                       series={state.series}
@@ -272,7 +275,9 @@ export const Dashboard = () => {
               </div>
             </div>
             <div className="col-md-3 col-12">
-              <div className="card px-2 py-4">
+              <div className="row justify-md-content-around justify-content-end">
+                <div className="col-md-12 col-9">
+                <div className="card px-2 py-4">
                 <h4>Right Sidebar</h4>
                 {
                   SibeBarData.map((item) => (
@@ -311,6 +316,9 @@ export const Dashboard = () => {
                   ))
                 }
               </div>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>

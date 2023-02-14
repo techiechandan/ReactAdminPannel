@@ -3,6 +3,7 @@ import { FaHome } from "react-icons/fa"
 // import { AiOutlineAlignLeft } from "react-icons/ai"
 import {BsList} from "react-icons/bs"
 import { AiFillGithub, AiOutlineWindows } from "react-icons/ai";
+import Searchbox from "../Searchbox";
 
 
 
@@ -50,7 +51,7 @@ const Sidebar = () => {
 
     return (
         <>
-            <div className="min-vh-100 shadow" style={{ width:IsOpen?"22rem":"5rem" ,transition:"0.3s"}} >
+            <div className="min-vh-100 shadow top-0 start-0 side-bar" style={{ width:IsOpen?"22rem":"5rem" ,transition:"0.3s"}} >
                 <div className="container d-flex justify-content-between mt-3 fs-5 text-primary wrap-element">
                     {
                     IsOpen && 
@@ -79,6 +80,9 @@ const Sidebar = () => {
                             </NavLink>
                         ))
                     }
+                </div>
+                <div className="container sidebar-searchbox mt-4">
+                    {IsOpen && <Searchbox />}
                 </div>
             </div>
         </>

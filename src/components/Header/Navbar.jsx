@@ -1,26 +1,21 @@
 import { AiFillBell, AiFillCalendar, AiOutlineShoppingCart } from "react-icons/ai";
-import { BsPersonCircle, BsSearch } from "react-icons/bs"
-
+import { BsPersonCircle } from "react-icons/bs"
+import Searchbox from "../Searchbox";
 
 const Navbar = (props) => {
     return (
         <>
-            <nav className="container-fluid d-flex justify-content-between mt-1 align-center shadow py-2 Navbar">
+            <nav className=" container-fluid d-flex justify-content-between align-center border-bottom pt-3 pb-2 Navbar">
                 <div className="navbar-nav me-auto mb-2 mb-lg-0">
                     <span className="fs-4 fw-bold">
                         {props.name}
                     </span>
                 </div>
 
-                <ul className="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-                    <form method="POST">
-                        <div className="input-field">
-                            <BsSearch className="search-btn mt-2" />
-                            <input type="text" className="Serachbox" placeholder="Type here" aria-label="Username" aria-describedby="basic-addon1" />
-                        </div>
-                    </form>
+                <ul className="navbar-nav navbar-searchbox ms-auto me-auto mb-2 mb-lg-0">
+                    <Searchbox />
                 </ul>
-                <ul className="d-flex justify-contentn-between list-unstyled mb-2 mb-lg-0">
+                <ul className="d-flex justify-md-contentn-between justify-start  list-unstyled mb-2 mb-lg-0">
                     <li className="nav-item ms-4">
                         <span className=" position-relative">
                             <AiFillBell className="fs-2 text-primary" />

@@ -65,6 +65,12 @@ code {
   width: 6rem ! important;
 }
 
+nav.Navbar{
+  background-color:white;
+}
+
+
+
 /* Dashboard */
 .d-card-icon{
   font-size: 5rem;
@@ -75,22 +81,60 @@ code {
   margin-top: 1rem;
 }
 
+
+div.main-container {
+  overflow-x: hidden;
+}
+
+
+div.first-row{
+  margin-top: 1rem;
+}
+
+.sidebar-searchbox{
+  display:none;
+}
+.sidebar-searchbox .input-field{
+  width:300px !important;
+}
+
 @media only screen and (max-width: 1200px) {
-  .input-field{
+  ul.navbar-searchbox{
+    display: none;
+  }
+  div.navbar-searchbox form.input-field{
     display: none;
   }
 }
 
+
 @media only screen and (max-width: 768px) {
   div.top-carousel{
     display:none;
+  }
+  div.side-bar{
+    position: fixed;
+    margin-top: 64px;
+    z-index: 10000 !important;
+    background-color: white !important;
+  }
+
+  nav.Navbar{
+    position: fixed!important;
+    z-index: 100 !important; 
+  }
+  div.first-row{
+    margin-top:80px !important
+  }
+
+  .sidebar-searchbox{
+    display:block;
   }
 }
 
 @media only screen and (max-width: 600px) {
   span.username{
     display: none;
-  }
-  
+  } 
 }
 
