@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ReactAdminPannel/static/css/main.3651a64e.css",
+    "main.js": "/ReactAdminPannel/static/js/main.94a41266.js",
+    "static/media/Trainner.jpg": "/ReactAdminPannel/static/media/Trainner.b50148dd24f15c751412.jpg",
+    "index.html": "/ReactAdminPannel/index.html",
+    "main.3651a64e.css.map": "/ReactAdminPannel/static/css/main.3651a64e.css.map",
+    "main.94a41266.js.map": "/ReactAdminPannel/static/js/main.94a41266.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3651a64e.css",
+    "static/js/main.94a41266.js"
+  ]
+}
